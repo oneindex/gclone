@@ -45,3 +45,14 @@ gclone copy gc:{共享目录id} gc:{团队盘id}/media/  --drive-server-side-acr
 
 ```
 
+### 3.直接拷贝单文件id  
+`id`操作.共享目录和团队盘应该带`--drive-server-side-across-configs`
+```
+gclone copy gc:{共享文件的id} gc:{目录2的id}  --drive-server-side-across-configs
+```
+  
+支持{目录id}后,跟后续路径  
+```
+gclone copy gc:{共享文件的id} gc:{团队盘id}/media/  --drive-server-side-across-configs
+
+```
